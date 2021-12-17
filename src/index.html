@@ -19,7 +19,7 @@
                     <h4 class="logo_title">EL  TIGRE</h4>
                     <div class="row">
                         <p class="logo_subtitle col-2">VENEZUELA COFFEE BEANS</p>
-                        <ul class="main_nav col-10">
+                        <ul class="main-nav col-10">
                            <li><a href="#home">HOME</a></li>
                             <li><a href="#products">PRODUCTS</a></li>
                             <li><a href="#contact">CONTACT</a></li>
@@ -35,18 +35,52 @@
                     </div>
                 </div>
             </header>
-            <script id="template-product" type="text/x-handlebars-template">
-                <article class="products"> 
-                    <hr>
-                    <header class="products_header">
-                        <h3 class="product_name no-spacing">{{{id}}} {{{name}}}</h3>
 
-                        <div class="description">
-                        
-                    </header>
-                </article>
-            </script>   
+            <div id="pages">
+                <section id="home">
+                  <div class="home-wrapper container">
+                  </div>
+                </section>
+                <section id="products">
+                  <div class="products-wrapper container">
+                    <div class="section-title">
+                      <h2>PRODUCTS</h2>
+                      <p class="section-title-line col-4"></p>
+                    </div>
+                    <div class="products-list"></div>
+                  </div>
+                </section>
+                <section id="contact">
+                  <div class="contact-wrapper container"></div>
+                </section>
+              </div>
+
+              <script id="template-product-widget" type="text/x-handlebars-template">
+                <div class="product-widget">
+                  <div class="row product-box">
+                    <div class="product-info col-6">
+                      <h1 class="product-name">{{{id}}} {{{ name }}}</h1>
+                      <div class="row product-description">
+                        <p class="line col-2"></p>
+                        <span class="description col-6">{{{ description }}}</span>
+                      </div>
+                      <div class="details row">
+                        <div class="qualities col-5">
+                          <p class="roasting">ROASTING:<span> {{{ roasting }}}</span></p>
+                          <p class="intensity">ROASTING:<span> {{{ intensity }}}</span></p>
+                        </div>
+                        <div class="most-popular col-2">
+                          {{{ most-popular }}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image col-5">
+                      {{{ images }}}
+                    </div>
+                  </div>
+                </div>
+              </script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
             <script src="js/app.js" type="module"></script>    
-        </body>
+      </body>
 </html>
