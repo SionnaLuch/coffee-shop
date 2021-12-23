@@ -14,7 +14,8 @@ class Product {
     const thisProduct = this;
     const generatedHTML = templates.productWidget(thisProduct.data);
     thisProduct.element = utils.createDOMFromHTML(generatedHTML);
-    const menuContainerHome = document.querySelector(select.containerOf.pages);
+    const menuContainerHome = document.querySelector(select.products.productsList);
+    console.log(menuContainerHome);
     menuContainerHome.appendChild(thisProduct.element);
   }
 }

@@ -8,16 +8,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/7b7f968a13.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css"> 
     </head>
         <body>
-            <header class="header">
+            <header class="header container">
                 <div class="background-image">
                     <img class="img-fluid" src ="./images/background.png"alt="Coffee">
                 </div>
-                <div class="header_wrapper">
+                <div class="header_wrapper container">
                     <h4 class="logo_title">EL  TIGRE</h4>
-                    <div class="row">
+                    <div class="row logo">
                         <p class="logo_subtitle col-2">VENEZUELA COFFEE BEANS</p>
                         <ul class="main-nav col-10">
                            <li><a href="#home">HOME</a></li>
@@ -27,7 +27,6 @@
                     </div>
                     <div class="page_title">
                         <h1 class="higher">HOME OF</h1><h1 class="lower">ORIGINAL TASTES</h1>
-                        <hr class="line">
                         <div>
                             <h4 class="discover">discover</h4>
                             <i class="far fa-arrow-alt-circle-down"></i>
@@ -45,7 +44,7 @@
                   <div class="products-wrapper container">
                     <div class="section-title">
                       <h2>PRODUCTS</h2>
-                      <p class="section-title-line col-4"></p>
+                      <p class="section-title-line col-6"></p>
                     </div>
                     <div class="products-list"></div>
                   </div>
@@ -55,31 +54,46 @@
                 </section>
               </div>
               <script id="template-product-widget" type="text/x-handlebars-template">
-                <div class="product-widget">
-                  <div class="row product-box">
-                    <div class="product-info col-6">
-                      <h1 class="product-name">{{{id}}} {{{ name }}}</h1>
-                      <div class="row product-description">
-                        <p class="line col-2"></p>
-                        <span class="description col-6">{{{ description }}}</span>
+                <div class="product-widget container">
+                  <div class="skill-right">
+                    <div class="product-image">
+                        {{{ images }}}
+                    </div>
+                    <div class="description">
+                      <h3 class="name">{{{ no }}} {{{ name }}}</h3>
+                      <div class="row">
+                        <p class="border-top col-2"></p>
+                        <span class="col-8 details">{{{ description }}}</span>
                       </div>
-                      <div class="details row">
-                        <div class="qualities col-5">
-                          <p class="roasting">ROASTING:<span> {{{ roasting }}}</span></p>
-                          <p class="intensity">ROASTING:<span> {{{ intensity }}}</span></p>
+                      <div class="row">
+                        <div class="col-sm-5 qualities">
+                          <p>roasting: <span>{{{ roasting }}}</span></p>
+                          <p>intensity: <span>{{{ intensity }}}</span></p>
                         </div>
-                        <div class="most-popular col-2">
+                        <div class="col-sm-5 badge">
                           {{{ most-popular }}}
                         </div>
                       </div>
                     </div>
-                    <div class="image col-5">
-                      {{{ images }}}
-                    </div>
                   </div>
                 </div>
               </script>
+              <article class="article-about active container" id="article-about">
+                <div class="home-widget">
+                  <img src="images/about-us.jpg" alt="about us">
+                  <div class="about">
+                    <h1>ABOUT US</h1>
+                    <p class="border-line"></p>
+                  </div>
+                  <div class="text">
+                    <p>Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new,
+                      something original.<br><br> Our coffees reflect us – young, wild and free. We are on the journey of new tastes...
+                      <h3 class="join">Join us!</h3>
+                    </p>
+                  </div>
+                </div>
+              </article>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
-            <script src="js/app.js" type="module"></script>    
+            <script src="js/app.js" type="module"></script>
       </body>
 </html>

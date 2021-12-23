@@ -4,15 +4,20 @@
   
 body {
   margin: 0;
-  background: lighten($color-dark, 75%);
+  background: $color-light;
   font-family: $font-text;
   font-size: 14px;
   line-height: 1.7;
-  color: $color-light;
+  color: $color-dark;
+  //text-align: center;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  
+
 }
   
 .container {
-  max-width: 500px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 20px;
 }
