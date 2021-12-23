@@ -1,18 +1,20 @@
 //normalize default styles
-@import "partials/normalize.scss";
+@import "partials/_normalize.scss";
 
 //bootstrap
-@import "bootstrap/functions.scss";
-@import "bootstrap/variables.scss";
-@import "bootstrap/utilities.scss";
-@import "bootstrap/mixins.scss";
-@import "bootstrap/grid.scss";
-@import "bootstrap/images.scss";
+@import "bootstrap/_functions.scss";
+@import "bootstrap/_variables.scss";
+@import "bootstrap/_utilities.scss";
+@import "bootstrap/_mixins.scss";
+@import "bootstrap/_grid.scss";
+@import "bootstrap/_images.scss";
 
 //partials
-@import "partials/settings.scss";
-@import "partials/header.scss";
-@import "partials/global.scss";
-@import "partials/products.scss";
-@import "partials/about.scss"
-
+@import "partials/_settings.scss";
+@import "partials/_header.scss";
+@import "partials/_global.scss";
+@import "partials/_products.scss";
+@import "partials/_about.scss";
+@import "partials/_form.scss";
+@import "partials/_footer.scss";
+@import "partials/media.scss";

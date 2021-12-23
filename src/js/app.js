@@ -1,6 +1,7 @@
 import{settings,select, classNames } from'./settings.js';
 import Product from './components/products.js';
 
+
 const app = {
   initPages: function(){
     const thisApp = this;
@@ -79,7 +80,6 @@ const app = {
       new Product(productData, thisApp.data.products[productData]);
     }
   },
-
   init: function(){
     const thisApp = this;
     thisApp.initData();

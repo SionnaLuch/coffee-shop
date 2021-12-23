@@ -1,0 +1,43 @@
+.contact-widget {
+  padding-top: 10%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $color-dark;
+  font-size: 25px;
+  font-weight: $font-weight-bold;
+  margin: 20px 0;
+  text-align: center;
+}
+  
+input {
+  border: 3px solid $color-dark;
+  width: 400px;
+  max-height: 72px;
+}
+  
+textarea {
+  border: 3px solid $color-dark;
+  clear: left;
+  width: 400px;
+  height: 150px;
+}
+  
+.submit-btn {
+  background-color: $color-gold;
+  color: $color-light;
+  border: none;
+  width: 240px;
+  height: 80px;
+  margin: 40px 0;
+
+  &:hover{
+    color: $color-dark;
+    transform: inherit;
+    background-color: $color-light;
+  }  
+}

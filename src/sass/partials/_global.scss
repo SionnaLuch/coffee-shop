@@ -31,3 +31,25 @@ body {
     display: block;
   }
 }
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  h2 {
+    font-size: 45px;
+    color: $color-gold;
+    letter-spacing: 7px;
+  }
+}
+
+.section-title-line {
+  margin: 30px 0 0 0;
+  border-top: 4px solid $color-gold;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 50%;
+}

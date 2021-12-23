@@ -1,0 +1,22 @@
+@media (max-width: 767px) {
+    *, *::before, *::after {
+      box-sizing: border-box;   
+    }
+    
+    .header {
+      max-height: 80vh;
+    }
+    .header img {
+        height: 80vh;  
+      }
+    .logo{
+        display: none;
+       
+    .page-title{
+        font-size: 10px;
+        width: 100%;
+        line-height: 1;
+    }
+    }
+    
+}

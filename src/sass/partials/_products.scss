@@ -1,0 +1,81 @@
+.products-wrapper {
+  margin: 0;
+  max-width: 1920px;
+  width: 100%;
+  padding-top: 65%;
+}
+
+.product-widget {
+  [class^="skill-"] {
+    position: relative;
+  }
+  
+  
+  .product-image {
+    position: absolute;
+    width: 47%;
+    height: 100%;
+    max-width: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .product-image img {
+    width: 80%;
+    height: 100%;
+  }
+  
+  .skill-right .product-image {
+    right: 0;
+  }
+  
+  .skill-right .description {
+    padding: 36px 55% 36px 0;
+    text-align: left;
+    margin-left: 8%;
+    margin-bottom: 5%;
+  }
+  
+  .name {
+    font-weight: $font-weight-bold;
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  
+  .border-top {
+    border-top: 3px solid $color-gold;
+  }
+  
+  .qualities {
+    font-size: 20px;
+    font-weight: $font-weight-bold;
+  
+    span{
+      color: $color-gold;
+    }
+  }
+  
+}
+
+.details{
+  margin-top: -7px;
+}
+  
+.product-widget:nth-child(even){
+  .description {
+    padding: 20px 0 36px 45%;
+    text-align: left;
+    margin-bottom: 5%;
+  }
+  
+  .skill-right .product-image {
+    left: 0;
+    margin-left: 8%;
+
+  }
+}
+  
+.article-product h2, .qualities {
+  text-transform: uppercase;
+}  
