@@ -42,5 +42,4 @@ export const settings = {
 
 export const templates = {
   productWidget: Handlebars.compile(document.querySelector(select.templateOf.productWidget).innerHTML),
-  // contactWidget: Handlebars.compile(document.querySelector(select.templateOf.contactWidget).innerHTML),
 };

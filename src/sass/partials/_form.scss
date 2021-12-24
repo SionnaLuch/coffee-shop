@@ -36,8 +36,11 @@ textarea {
   margin: 40px 0;
 
   &:hover{
-    color: $color-dark;
-    transform: inherit;
-    background-color: $color-light;
+    color: $color-gold;
+    background:$color-light;
+    border: solid 2px $color-gold;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
   }  
 }
