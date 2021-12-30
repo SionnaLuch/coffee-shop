@@ -1,5 +1,6 @@
 .contact-widget {
   padding-top: 10%;
+  margin-top:0;
 }
 
 .form {
@@ -33,7 +34,7 @@ textarea {
   border: none;
   width: 240px;
   height: 80px;
-  margin: 40px 0;
+  margin: 20px 0;
 
   &:hover{
     color: $color-gold;

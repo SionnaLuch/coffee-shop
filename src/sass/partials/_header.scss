@@ -32,11 +32,13 @@ header{
   position: absolute;
   left: 0;
   right: 0;
+  z-index:1;
 }
 
 .main-nav{
   margin-top: -35px;
   padding-right: 0;
+  z-index:999;
 }
 
 ul{
@@ -78,7 +80,7 @@ ul{
   font-weight: $font-weight-regular;
   word-spacing: 5px;
   letter-spacing: 2px;
-  padding-left: 10%;
+  padding-left: 9%;
   display: inline;
   color: $color-light;
 }
@@ -98,6 +100,7 @@ ul{
     margin-bottom: -10px;
     font-size: 55px;
     padding-right: 25%;
+    z-index:1;
 
 
   }
@@ -127,7 +130,7 @@ ul{
   margin-bottom: 0;
   padding-top: 20%;
   vertical-align: text-bottom;
-
+  font-family: $font-weight-regular;
 }
 
 i{
