@@ -14,9 +14,11 @@ class Product {
     const thisProduct = this;
     const generatedHTML = templates.productWidget(thisProduct.data);
     thisProduct.element = utils.createDOMFromHTML(generatedHTML);
-    const menuContainerHome = document.querySelector(select.products.productsList);
+    const menuContainerHome = document.querySelectorAll(select.products.productsList);
     console.log(menuContainerHome);
-    menuContainerHome.appendChild(thisProduct.element);
+    for (let product of menuContainerHome){
+      product.appendChild(thisProduct.element);
+    }
   }
 }
 
