@@ -8,7 +8,7 @@
   right: 0;
   z-index: 1;
   filter: brightness(33%);
-  visibility: hidden;
+  // visibility: hidden;
 }
 
 header{
@@ -33,13 +33,13 @@ header{
   position: absolute;
   left: 0;
   right: 0;
-  z-index:1;
+  z-index: 1;
 }
 
 .main-nav{
   margin-top: -35px;
   padding-right: 0;
-  z-index:999;
+  z-index: 999;
 }
 
 ul{
@@ -101,7 +101,7 @@ ul{
     margin-bottom: -10px;
     font-size: 55px;
     padding-right: 25%;
-    z-index:1;
+    z-index: 1;
 
 
   }
