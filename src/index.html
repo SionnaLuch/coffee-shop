@@ -42,10 +42,35 @@
                       <h2 class="home-products">PRODUCTS</h2>
                       <p class="section-title-line col-6"></p>
                     </div>
-                    <div class="products-list"></div>
+                    <div class="products-list-home"></div>
+                    <script id="template-home-widget" type="text/x-handlebars-template">
+                      <div class="product-widget container">
+                        <div class="skill-right">
+                          <div class="product-image">
+                              {{{ images }}}
+                          </div>
+                          <div class="description">
+                            <h3 class="name">{{{ no }}} {{{ name }}}</h3>
+                            <div class="row">
+                              <p class="border-top col-2"></p>
+                              <span class="col-8 details">{{{ description }}}</span>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-5 qualities">
+                                <p class="roasting">roasting: <span>{{{ roasting }}}</span></p>
+                                <p class="intensity">intensity: <span>{{{ intensity }}}</span></p>
+                              </div>
+                              <div class="col-sm-5 badge">
+                                {{{ most-popular }}}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </script>
                     <article class="article-about active" id="article-about">
                       <div class="home-widget">
-                        <img src="images/about-us.jpg" alt="about us">
+                        <img class="img-fluid" src="images/about-us.jpg" alt="about us">
                         <div class="section-title container">
                           <h2>ABOUT US</h2>
                           <p class="section-title-line col-6 about-line"></p>
@@ -65,9 +90,10 @@
                       <h2 >PRODUCTS</h2>
                       <p class="section-title-line col-6"></p>
                     </div>
-                    <div class="products-list-home"></div>
+                    <div class="products-list"></div>
                   </div>
                 </section>
+
                 <section id="contact">
                   <div class="contact-wrapper container">
                     <article class="article-contact" id="article-contact">

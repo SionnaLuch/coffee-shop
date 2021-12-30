@@ -1,4 +1,4 @@
-import { templates} from '../settings.js';
+import { templates, select} from '../settings.js';
 import { utils } from '../utils.js';
 
 class Home {
@@ -11,11 +11,12 @@ class Home {
   }
   render(){
     const thisHome = this;
-    const generatedHTML = templates.productWidget(thisHome.data);
+    const generatedHTML = templates.homeWidget(thisHome.data);
     thisHome.element = utils.createDOMFromHTML(generatedHTML);
-    const menuContainerHome = document.querySelector('.product-list-home');
-    console.log(menuContainerHome);
-    menuContainerHome.appendChild(thisHome.element);
+    console.log(generatedHTML);
+    const menuContainer = document.querySelector(select.home.productsListHome);
+    console.log(menuContainer);
+    menuContainer.appendChild(thisHome.element);
   }
 }
 export default Home;

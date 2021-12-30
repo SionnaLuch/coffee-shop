@@ -2,13 +2,15 @@ export const select = {
   templateOf: {
     productWidget: '#template-product-widget',
     contactWidget: '#template-contact-widget',
+    homeWidget:'#template-home-widget',
+
   },
 
   containerOf: {
     pages: '#pages',
     products: '.products-wrapper',
     contact: '.contact-wrapper',
-
+   
   },
 
   nav: {
@@ -16,7 +18,7 @@ export const select = {
   },
 
   home: {
-    productsList: '.products-list'
+    productsListHome: '.products-list-home'
   },
 
   products: {
@@ -42,4 +44,5 @@ export const settings = {
 
 export const templates = {
   productWidget: Handlebars.compile(document.querySelector(select.templateOf.productWidget).innerHTML),
+  homeWidget: Handlebars.compile(document.querySelector(select.templateOf.homeWidget).innerHTML),
 };
