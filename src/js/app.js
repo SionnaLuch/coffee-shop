@@ -1,6 +1,6 @@
 import{settings,select, classNames } from'./settings.js';
 import Product from './components/Products.js';
-import Home from './components/Home.js';
+import HomeProduct from './components/HomeProduct.js';
 
 
 
@@ -69,18 +69,18 @@ const app = {
       .then((parsedResponse)=>{
         this.data.products = parsedResponse;
         thisApp.initMenu();
-        thisApp.initHome();
+        thisApp.initHomeProduct();
         
       });
     
   },
-  initHome: function(){
+  initHomeProduct: function(){
     
     const thisApp = this;
     console.log('thisApp.data', thisApp.data);
 
     for(let productData in thisApp.data.products){
-      new Home(productData, thisApp.data.products[productData]);
+      new HomeProduct(productData, thisApp.data.products[productData]);
     }
   },
   initMenu: function(){

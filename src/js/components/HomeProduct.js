@@ -1,7 +1,7 @@
 import { templates, select} from '../settings.js';
 import { utils } from '../utils.js';
 
-class Home {
+class HomeProduct {
   constructor(id, data) {
     const thisHome = this;
     thisHome.id = id;
@@ -19,5 +19,5 @@ class Home {
     menuContainer.appendChild(thisHome.element);
   }
 }
-export default Home;
+export default HomeProduct;
 
