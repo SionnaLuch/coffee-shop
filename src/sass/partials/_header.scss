@@ -6,40 +6,41 @@
   position: absolute;
   filter: brightness(33%);
   overflow: hidden;
+  max-height: 100%;
+  
 }
 
 header{
-  max-width: 1920px;
   background-color: $color-light;
   position: relative;
-
-
+  // max-width: 1920px;
+ 
 }
 
 .header_wrapper{
   position: relative;
- 
+  
 }
 
 .main-nav{
-  display:flex;
+  display: flex;
   justify-content: flex-end;
 
 }
 
 ul{
-  margin-top: -40px;
+  padding-top: 50px;
   word-spacing: 5px;
   letter-spacing: 2px;
+  list-style: none;
+  font-size: 25px;
 
-    a{
-      text-decoration: none;
-      color: $color-gold;
-      margin:10px;
-    }
+  a{
+    text-decoration: none;
+    color: $color-gold;
+    margin: 10px;
   }
-
-
+}
 
 .logo_title{
   font-weight: $font-weight-black;
@@ -48,12 +49,12 @@ ul{
   word-spacing: 5px;
   letter-spacing: 2px;
   padding-top: 10px;
-  font-size: 20px;
+  font-size: 35px;
    
 }
 
 .logo_subtitle{
-  font-size: 10px;
+  font-size: 20px;
   font-weight: $font-weight-regular;
   word-spacing: 5px;
   letter-spacing: 2px;
@@ -66,16 +67,16 @@ ul{
   text-align: center;
   word-spacing: 7px;
   letter-spacing: 4px;
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 
     
   .higher{
-    padding-top: 20%;
+    padding-top: 15%;
     font-size: 55px;
     padding-right: 20%;
-    margin:0;
+    margin: 0;
   }
 
   .lower{
@@ -87,19 +88,19 @@ ul{
 
   }
 
-.title-line{
-  margin-left:30%;
-  border-top: 4px solid $color-gold;
-  transform: translate(70%, -50%);
-  width:20%;
+  .title-line{
+    margin-left: 30%;
+    border-top: 4px solid $color-gold;
+    transform: translate(70%, -50%);
+    width: 20%;
   
-}
+  }
 }
 
 .discover{
   color: $color-light;
   margin-bottom: 0;
-  padding-top: 20%;
+  padding-top: 10%;
   vertical-align: text-bottom;
   font-family: $font-weight-regular;
 }
