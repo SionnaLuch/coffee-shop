@@ -4,181 +4,169 @@
   }
 
   .page_title{
-
-
     .lower{
-      font-size: 30px;
+      font-size: 35px;
     }
 
     .higher{
-      font-size: 30px;
+      font-size: 35px;
     }
 
-}
+  }
 
-.header {
-  max-height: 80vh;
-}
+  .header {
+    max-height: 80vh;
+  }
   
-.header img {
-  height: 80vh;  
-}
+  .header img {
+    height: 80vh;  
+  }
   
-.logo_title{
-  font-size:15px;
-}
-.logo_subtitle {
-  font-size: 10px;
-}
-  
-.main-nav {
-  
-
-    
-  
-  a {
+  .logo_title{
     font-size: 15px;
-    margin-left: 10px;
-    // margin-right: 15px;
-    // color: $color-gold;
   }
-}
-  
-.section-title {
-  h2 {
-    font-size: 30px;
-    letter-spacing: 5px;
-    text-align: center;
-      
-  }
-}
-  
-//products
-.home-wrapper {
-  // padding-top: 165%;
-}
 
-.products-wrapper{
-  // padding-top: 170%;
-}
-
-.product-widget{
-  padding-left: 0;
-  padding-right: 0;
-  max-width: 700px;
-}
-
-.skill-right{
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  padding-left: 0;
-  left: 10%;
-  right: 10%;
-}
-      
-.description{
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  text-align: center;
-  
-  .name {
-    font-size: 20px;
-    width: 100%;
-    text-align: center;
+  .logo_subtitle {
+    font-size: 10px;
   }
   
-  .line {
-    width: 100%;
-  }
-  
-  .details {
-    font-size: 13px;
-    width: 100%;
-  }
-  
-  .qualities {
-    padding-top: 15px;
-    font-size: 13px;
-  }
-}
-      
-.product-image {
-  position: relative;
-  
-  img {
-    width: 100px;
-    max-height: 80%;
-  }
-}
-  
-.badge {
-  img {
-    height: 50px;
-  }
-}
-  
-.product-widget:nth-child(even){
-  .skill-right{
-    padding-left: 0;
-    text-align: left;
-  }
-  
-  .product-image {
-    left: 0;
-  }
-}
-      
-// about 
-.home-widget{
-  height: 80vh;
-  margin-left: -10px;
-  width: 100%;
-  padding-top: 20%;
-  
-  img {
-    max-height: 100%;
-    margin: 0 auto;
-    max-width: 100%;
-  }
-}
-  
-.section-title {
-  font-size: 20px;
-  margin: 0;
-}
+  .main-nav {
+    a {
+      font-size: 15px;
+      margin-left: 10px;
     
-.section-title-line {
-  border-top: 5px solid $color-gold;
-  width: 100%;
-}
-  
-.text {
-  p{
-    font-size: 12px;
+    }
   }
   
-  span {
-    padding-left: 60%;
+  .section-title {
+    h2 {
+      font-size: 30px;
+      letter-spacing: 5px;
+      text-align: center;
+      
+    }
   }
-}
   
-  
-//contact
+  //products
 
-input {
-  min-width: 300px;
-  max-width: 300px;
-  min-height: 72px;
-  max-height: 72px;
-}
+  .product-widget{
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 700px;
+  }
+
+  .skill-right{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-left: 0;
+    left: 10%;
+    right: 10%;
+  }
+      
+  .description{
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    text-align: center;
   
-textarea {
-  min-width: 300px;
-  max-width: 300px;
-  min-height: 100px;
-  max-height: 100px;
-}
+    .name {
+      font-size: 20px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .line {
+      width: 100%;
+    }
+  
+    .details {
+      font-size: 13px;
+      width: 100%;
+    }
+  
+    .qualities {
+      padding-top: 15px;
+      font-size: 13px;
+    }
+  }
+      
+  .product-image {
+    position: relative;
+  
+    img {
+      width: 100px;
+      max-height: 80%;
+      object-fit:cover;
+    }
+  }
+  
+  .badge {
+    img {
+      height: 50px;
+    }
+  }
+  
+  .product-widget:nth-child(even){
+    .skill-right{
+      padding-left: 0;
+      text-align: left;
+    }
+  
+    .product-image {
+      left: 0;
+    }
+  }
+      
+  // about 
+  .home-widget{
+    height: 60vh;
+    margin-left: -10px;
+    width: 100%;
+    padding-top: 20%;
+  
+    img {
+      max-height: 100%;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  }
+  
+  .section-title {
+    font-size: 20px;
+    margin: 0;
+  }
+    
+  .section-title-line {
+    border-top: 5px solid $color-gold;
+    width: 100%;
+  }
+  
+  .text {
+    p{
+      font-size: 12px;
+    }
+  
+    span {
+      padding-left: 60%;
+    }
+  }
+  
+  
+  //contact
+
+  input {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 72px;
+    max-height: 72px;
+  }
+  
+  textarea {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 100px;
+    max-height: 100px;
+  }
 }
   
